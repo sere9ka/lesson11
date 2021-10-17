@@ -21,9 +21,11 @@ const bkgcSquare = function () {
 }
 btnButton.addEventListener('click', bkgcSquare);
 
+range.defaultValue = circle.width;
+rangeSpan.textContent = range.value + '%'
 const circleSize = function (event) {
     valuesInput = event.target.value;
-    rangeSpan.textContent = valuesInput
+    rangeSpan.textContent = valuesInput + '%'
     circle.style.width = valuesInput + '%';
     circle.style.height = valuesInput + '%';
 }
